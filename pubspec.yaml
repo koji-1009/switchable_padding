@@ -1,5 +1,5 @@
 name: switchable_padding
-description: A new Flutter package project.
+description: A widget that adds calculated padding to the child according to the given width.
 version: 0.0.1
 homepage: https://github.com/koji-1009/switchable_padding
 
