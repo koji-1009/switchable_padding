@@ -1,7 +1,9 @@
 import 'package:flutter/widgets.dart';
 
-/// Function to calculate EdgeInsetsGeometry from width
-typedef PaddingFunction = EdgeInsetsGeometry Function(double width);
+/// Function to calculate [EdgeInsetsGeometry] from [BoxConstraints]
+typedef PaddingFunction = EdgeInsetsGeometry Function(
+  BoxConstraints constraints,
+);
 
 /// A widget that adds calculated padding to the child according to the given width.
 class SwitchablePadding extends StatelessWidget {
@@ -18,7 +20,7 @@ class SwitchablePadding extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) => Padding(
-        padding: padding(constraints.maxWidth),
+        padding: padding(constraints),
         child: child,
       ),
     );
