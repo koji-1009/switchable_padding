@@ -1,6 +1,6 @@
 name: switchable_padding
 description: A widget that adds calculated padding to the child according to the given width.
-version: 1.0.0
+version: 1.1.0
 homepage: https://github.com/koji-1009/switchable_padding
 
 environment:
