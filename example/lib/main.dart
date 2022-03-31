@@ -31,12 +31,12 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    _padding(double width) {
-      if (width < 600) {
+    _padding(BoxConstraints constraints) {
+      if (constraints.maxWidth < 600) {
         return const EdgeInsets.all(0);
-      } else if (width < 905) {
+      } else if (constraints.maxWidth < 905) {
         return const EdgeInsets.all(16);
-      } else if (width < 1440) {
+      } else if (constraints.maxWidth < 1440) {
         return const EdgeInsets.all(32);
       } else {
         return const EdgeInsets.all(48);
